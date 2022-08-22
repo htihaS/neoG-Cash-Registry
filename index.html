@@ -13,33 +13,36 @@
         <p class="description">Enter the bill amount and cash received to get minimum number of notes to return</p>
         <label for="bill-amount">Bill amount:</label>
         <input type="text" class="bill-amount"/>
-        <label for="cash-received">Cash Received</label>
-        <input type="text" class="cash-received">
-        <button class="submit">check</button>
-        <p class="message"></p>
-        <table class="change-table">
-            <caption>Return change</caption>
-            <tr>
-                <th>No of Notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-              </tr>
-            <tr class="row-two">
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
+        <button class="next">Next</button>
+        <div class="after-next-button" style="display: none;">
+            <label for="cash-received">Cash Received</label>
+            <input type="text" class="cash-received">
+            <button class="submit">check</button>
+            <p class="message"></p>
+            <table class="change-table">
+                <caption>Return change</caption>
+                <tr>
+                    <th>No of Notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr class="row-two">
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 <script src="app.js" type="text/javascript"></script>

@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
-    margin-left: 20rem;
+    margin: 5rem 20rem;
     border: 0.3rem solid #00BFA6 ;
     background-color: white;
 }
 body{
-    
+    background-color: blanchedalmond;
 }
 button{
     margin:1rem;
