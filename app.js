@@ -8,7 +8,7 @@ const availableNotes = [2000,500,100,20,10,5,1];
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 nextbutton.addEventListener("click",()=>{
-    nextbuttondiv.style.display = "block";
+        nextbuttondiv.style.display = "block";
 })
 
 checkButton.addEventListener("click",()=>{
