@@ -14,7 +14,7 @@ nextbutton.addEventListener("click",()=>{
 checkButton.addEventListener("click",()=>{
     if(billAmount.value>0){
         message.style.display= "none";
-        if(billAmount.value <= cashReceived.value){
+        if(Number(billAmount.value) <= Number(cashReceived.value)){
             var cashToBeReturned = cashReceived.value - billAmount.value;
             calculateChange(cashToBeReturned);
         }else{
