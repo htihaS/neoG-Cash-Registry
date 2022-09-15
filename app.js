@@ -12,6 +12,7 @@ nextbutton.addEventListener("click",()=>{
 })
 
 checkButton.addEventListener("click",()=>{
+    
     if(billAmount.value>0){
         message.style.display= "none";
         if(Number(billAmount.value) <= Number(cashReceived.value)){
@@ -19,7 +20,7 @@ checkButton.addEventListener("click",()=>{
             calculateChange(cashToBeReturned);
         }else{
             message.style.display= "block";
-            message.innerText = "Aur paise?";
+            message.innerText = "Insuffient amount";
         }
     }else{
         message.style.display= "block";
@@ -28,8 +29,9 @@ checkButton.addEventListener("click",()=>{
 })
 
 function calculateChange(cashToBeReturned){
-    for(var i=0;cashToBeReturned!=0;i++){
-            const presentnotes= Math.trunc(cashToBeReturned/availableNotes[i]);
+    
+    for(var i=0;i<availableNotes.length;i++){
+        const presentnotes= Math.trunc(cashToBeReturned/availableNotes[i]);
             console.log(availableNotes[i] ,":",presentnotes);
             cashToBeReturned %= availableNotes[i];
             noOfNotes[i].innerText=presentnotes;
