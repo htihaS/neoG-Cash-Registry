@@ -1,4 +1,9 @@
 # neoG-Cash-Registry
+
+#HTML-CSS-JS
+
+
+
 A cash register manager which helps the user by telling how can he/she return the change to the customer with minimum number of notes.
 
 Enter bill amount and cash received to know the number of notes to be dispersed.
