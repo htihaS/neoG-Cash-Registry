@@ -37,6 +37,8 @@ table th{
 /* footer */
 .footer{
     background-color: #00BFA6 ;
+    bottom: 0;
+    width: 100%;
     padding: 2rem 1rem;
     text-align: center;
     color:white;
